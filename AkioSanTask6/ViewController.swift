@@ -40,15 +40,15 @@ class ViewController: UIViewController {
         slider.minimumValue = 1
         slider.maximumValue = 100
         
-        let roundingValue = round(slider.value)
+        let sliderValue = round(slider.value)
 
-        if randomNumberLabel.text == "\(roundingValue)" {
+        if randomNumberLabel.text == "\(sliderValue)" {
             
-            dialog(decision: "正解!", value: "\(roundingValue)")
+            dialog(decision: "正解!", value: "\(sliderValue)")
         
         } else {
             
-            dialog(decision: "ハズレ!", value: "\(roundingValue)")
+            dialog(decision: "ハズレ!", value: "\(sliderValue)")
         
         }
         
